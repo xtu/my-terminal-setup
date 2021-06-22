@@ -1,0 +1,3 @@
+[submodule "Go-Shell"]
+	path = Go-Shell
+	url = https://github.com/xtu/Go-Shell.git
