@@ -3,10 +3,10 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # PowerShell Core
-choco install powershell-core
+choco install -y powershell-core
 
 # Windows Terminal
-choco install microsoft-windows-terminal
+choco install -y microsoft-windows-terminal
 
 # Set PowerShell Core as the default profile in Windows Terminal
 $settingsPath = Get-ChildItem -Recurse -path "$env:localappdata/Packages/Microsoft.WindowsTerminal_*/LocalState/settings.json"
