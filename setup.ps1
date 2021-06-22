@@ -21,3 +21,6 @@ Copy-Item .\Go-Shell\go.psm1 $env:HOMEPATH\Documents\PowerShell\modules
 
 # Posh-git PowerShell module
 Install-Module posh-git
+
+# Copy PowerShell profile that supports shorten-path
+Copy-Item .\Microsoft.PowerShell_profile.ps1 $env:HOMEPATH\Documents\PowerShell
